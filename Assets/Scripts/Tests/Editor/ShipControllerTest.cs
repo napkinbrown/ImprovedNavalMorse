@@ -1,10 +1,10 @@
-﻿using NUnit.Framework;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEditor;
+using UnityEngine.TestTools;
+using NUnit.Framework;
+using System.Collections;
 
-[TestFixture]
-public class ShipControllerTest : MonoBehaviour {
-
-    // A ship should be able to move in cardinal directions, fire its weapons, and die when its health is zero
+public class ShipControllerTest {
 
     [Test]
     public void testCreation()
@@ -13,7 +13,8 @@ public class ShipControllerTest : MonoBehaviour {
     }
 
     [Test]
-    public void testMovement() {
+    public void testMovement()
+    {
         throw new System.NotImplementedException("Please create a test first");
     }
 
